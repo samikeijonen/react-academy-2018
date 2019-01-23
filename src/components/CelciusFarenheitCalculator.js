@@ -55,14 +55,14 @@ class CelciusFarenheitCalculator extends Component {
 				<h2>Farenheit/Celcius Calculator</h2>
 				<form className="grid grid--same-line" onChange={this.handleSubmit}>
 					<div className="grid__wrapper">
-						<input onChange={this.handleChange} type="number" name="farenheit" id="farenheit" value={this.state.farenheit ? this.state.farenheit : 32} />
+						<input onChange={this.handleChange} type="number" name="farenheit" id="farenheit" value={this.state.farenheit} />
 						<label htmlFor="farenheit">Farenheit</label>
 					</div>
 
 					<div className="grid__wrapper px-1x"><span className="font-big">=</span></div>
 
 					<div className="grid__wrapper">
-						<input onChange={this.handleChange} type="number" name="celcius" id="celcius" value={this.state.celcius ? this.state.celcius : 0} />
+						<input onChange={this.handleChange} type="number" name="celcius" id="celcius" value={this.state.celcius} />
 						<label htmlFor="celcius">Celcius</label>
 					</div>
 				</form>
